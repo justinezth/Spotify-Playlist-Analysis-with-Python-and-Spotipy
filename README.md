@@ -41,8 +41,33 @@ This is what the resulting data looks like:
 ![result_data](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/data.png)
 
 ## [Data Analysis](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/Analysis%20Chinese%20vs%20English.ipynb)
+Based on my own view on my music taste and favorite genres (slow pop, ballads, sad songs), I hypothesized that my music taste would be similar even in different languages, and that they would be:
+- lower in valence (musical positiveness)
+- lower in tempo (speed)
+- lower in loudness
+- lower in energy
+- higher in speechiness
 
+Here is some of the analysis and visualizations I created:
+
+1. Audio Feature Distributions with Histograms
+![histograms](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/histograms.png)
+
+2. Heatmaps of Correlation Among Audio Features
+![correlations](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/correlations.png)
+
+3. Mean Values of Audio Features on a Bar Chart
+![bar](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/bar.png)
+
+4. I also created metrics for determining how diversified my playlists are using the average of the standard deviations of each audio feature.
+![variety](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/variety.png)
 
 ## Conclusion
+From many of the graphs, especially the one about the averages of the audio features, it can be inferred that the two playlists are pretty similar. Their means were relatively close to each other and the from the histogram, it can be seen that the spreads of the audio features were pretty similar when comparing the English and Chinese Songs.
+
+I was correct in that many of my songs weren't high in valence nor tempo because valence measures the positivity of a song, and I like to listen to slower and sadder music. However, the levels of some of the audio features surprised me. I thought my music would be loud and less speechy. Loudness ended up as the feature with the highest mean for both playlists and speechiness had the lowest means. This could be explained by loudness and speechiness both don't necessarily have a very strong correlation with valence as shown on the heat maps (and I based my assumptions on low valence). The correlation of those two features with valence are very low especially for the English songs (<0.08).
+
+Turns out, I think I was right in that my music taste isn't super diversified beacuse when I calculated the average of the standard deviations of my songs' audio feature, it came out to be around 0.22 which I think is pretty low. It was this amount for both the English and Chinese playlists.
 
 ## Next Steps
+Next time, I would want to try to look at a bigger subset of my music becuase this time I only had 37 songs from each playlist (since I don't listen to as many Chinese songs). Moving forward, I will also try to apply machine learning in my analysis -- perhaps in predicting which playlists a song belongs in or make song recommendations based on playlist of songs.
