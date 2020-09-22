@@ -29,12 +29,16 @@ These are the features extracted and their definition (taken from the Spotify do
 ### Data Preprocessing + Feature Engineering
 Since I have more tracks in my English song playlist, I randomly selected 37 songs to match the size of my Chinese song playlist. I have fewer songs in the Chinese playlist because I don't know as many songs in Chinese compared to songs in English. 
 
-I dropped unnecessary features such as 'track_name' beacuse I wouldn't need to know the name of the song in the analysis, I will only be using audio features.
+I dropped unnecessary features such as 'track_name' beacuse I wouldn't need to know the name of the song in the analysis, I will only be using audio features. I also creaded a 'track_id' column.
 
-### Dropping unnecessary columns
 ### Normalize features
+I had to normalize the features so they contained values ranging from 0 to 1 because two of the features, tempo and loudness, were on a much higher scale than the others, which would make analysis (especially visualizing) difficult.
 
-## Exploratory Data Analysis
+### Saved into CSV
+I then saved the audio feature data for the 2 different playlists into 2 separate CSV files which I will read from for the [analysis of the music](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/Analysis%20Chinese%20vs%20English.ipynb).
+
+## [Data Analysis](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/Analysis%20Chinese%20vs%20English.ipynb)
+
 
 ## Conclusion
 
