@@ -49,6 +49,7 @@ Based on my own view on my music taste and favorite genres (slow pop, ballads, s
 - higher in speechiness
 
 Here is some of the analysis and visualizations I created:
+
 I used Spotify's green and black colors for visualization :)
 
 1. Audio Feature Distributions with Histograms
