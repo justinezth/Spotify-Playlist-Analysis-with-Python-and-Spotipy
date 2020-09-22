@@ -34,8 +34,11 @@ I dropped unnecessary features such as 'track_name' beacuse I wouldn't need to k
 ### Normalize features
 I had to normalize the features so they contained values ranging from 0 to 1 because two of the features, tempo and loudness, were on a much higher scale than the others, which would make analysis (especially visualizing) difficult.
 
-### Saved into CSV
+### Saved as CSV
 I then saved the audio feature data for the 2 different playlists into 2 separate CSV files which I will read from for the [analysis of the music](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/Analysis%20Chinese%20vs%20English.ipynb).
+
+This is what the resulting data looks like:
+![result_data](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/data.png)
 
 ## [Data Analysis](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/Analysis%20Chinese%20vs%20English.ipynb)
 
