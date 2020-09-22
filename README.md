@@ -31,7 +31,7 @@ Since I have more tracks in my English song playlist, I randomly selected 37 son
 
 I dropped unnecessary features such as 'track_name' beacuse I wouldn't need to know the name of the song in the analysis, I will only be using audio features. I also creaded a 'track_id' column.
 
-### Normalize features
+### Normalization of Features
 I had to normalize the features so they contained values ranging from 0 to 1 because two of the features, tempo and loudness, were on a much higher scale than the others, which would make analysis (especially visualizing) difficult.
 
 ### Saved as CSV
