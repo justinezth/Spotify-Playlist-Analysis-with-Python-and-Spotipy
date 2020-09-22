@@ -48,7 +48,7 @@ Based on my own view on my music taste and favorite genres (slow pop, ballads, s
 - lower in energy
 - higher in speechiness
 
-Here is some of the analysis and visualizations I created:
+Here are some of my analysis and visualizations I created:
 
 I used Spotify's green and black colors for visualization :)
 
