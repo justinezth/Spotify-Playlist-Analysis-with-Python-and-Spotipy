@@ -4,7 +4,12 @@ Using Python and Spotify's API, I created an analysis/comparison of my favorite 
 ## Goal
 To see if my taste in music is similar in different languages, and to get to know my music taste a little better through numbers and visualizations.
 
-## Authorization Flow for Spotify's API 
+## Data Collection + Resources Used
+I used [Spotipy](https://spotipy.readthedocs.io/en/2.13.0/), a lightweight Python library for the Spotify Web API. With Spotipy, I get full access to all of the music data provided by the Spotify platform. 
+
+I looked at [makispl's repository](https://github.com/makispl/Spotify-Data-Analysis) to help write the Authorization Flow code to gain access to Spotify's data.
+
+I was also inspired by [jmcabreira's repo](https://github.com/jmcabreira) for this project.
 
 ## Extracting the Music and Audio Features
 
