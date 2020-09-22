@@ -52,16 +52,16 @@ Here is some of the analysis and visualizations I created:
 
 I used Spotify's green and black colors for visualization :)
 
-1. Audio Feature Distributions with Histograms
+### 1. Audio Feature Distributions with Histograms
 ![histograms](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/histograms.png)
 
-2. Heatmaps of Correlation Among Audio Features
+### 2. Heatmaps of Correlation Among Audio Features
 ![correlations](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/correlations.png)
 
-3. Mean Values of Audio Features on a Bar Chart
+### 3. Mean Values of Audio Features on a Bar Chart
 ![bar](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/bar.png)
 
-4. I also created metrics for determining how diversified my playlists are using the average of the standard deviations of each audio feature.
+### 4. I also created metrics for determining how diversified my playlists are using the average of the standard deviations of each audio feature.
 ![variety](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/variety.png)
 
 ## Conclusion
