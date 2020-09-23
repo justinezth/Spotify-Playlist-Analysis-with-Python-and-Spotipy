@@ -29,10 +29,10 @@ These are the features extracted and their definition (taken from the Spotify do
 ### Data Preprocessing + Feature Engineering
 Since I have more tracks in my English song playlist, I randomly selected 37 songs to match the size of my Chinese song playlist. I have fewer songs in the Chinese playlist because I don't know as many songs in Chinese compared to songs in English. 
 
-I dropped unnecessary features such as 'track_name' beacuse I wouldn't need to know the name of the song in the analysis, I will only be using audio features. I also creaded a 'track_id' column.
+I dropped unnecessary features such as 'track_name' beacuse I wouldn't need to know the name of the song in the analysis, I will only be using audio features. I also created a 'track_id' column.
 
 ### Normalization of Features
-I had to normalize the features so they contained values ranging from 0 to 1 because two of the features, tempo and loudness, were on a much higher scale than the others, which would make analysis (especially visualizing) difficult.
+I had to normalize the features (so they contained values ranging from 0 to 1) because two of the features, tempo and loudness, were on a much higher scale than the others, which would make analysis (especially for visualization) difficult.
 
 ### Saved as CSV
 I then saved the audio feature data for the 2 different playlists into 2 separate CSV files which I will read from for the [analysis of the music](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/Analysis%20Chinese%20vs%20English.ipynb).
@@ -65,11 +65,11 @@ I used Spotify's green and black colors for visualization :)
 ![variety](https://github.com/justinezth/Spotify-Playlist-Analysis-with-Python-and-Spotipy/blob/master/pics/variety.png)
 
 ## Conclusion
-From many of the graphs, especially the one about the averages of the audio features, it can be inferred that the two playlists are pretty similar. Their means were relatively close to each other and the from the histogram, it can be seen that the spreads of the audio features were pretty similar when comparing the English and Chinese Songs.
+From many of the graphs, especially the one about the averages of the audio features, can help infer that the two playlists are pretty similar. When comparing the English and Chinese Songs, their means were relatively close to each other. And the from the histogram, it can be seen that the spreads of the audio features were pretty similar as well.
 
-I was correct in that many of my songs weren't high in valence nor tempo because valence measures the positivity of a song, and I like to listen to slower and sadder music. However, the levels of some of the audio features surprised me. I thought my music would be loud and less speechy. Loudness ended up as the feature with the highest mean for both playlists and speechiness had the lowest means. This could be explained by loudness and speechiness both don't necessarily have a very strong correlation with valence as shown on the heat maps (and I based my assumptions on low valence). The correlation of those two features with valence are very low especially for the English songs (<0.08).
+I was correct in that many of my songs weren't high in valence nor tempo because valence measures the positivity of a song, and I like to listen to slower and sadder music. However, the levels of some of the audio features surprised me. I thought my music would be loud and less speechy. Loudness ended up as the feature with the highest mean for both playlists and speechiness had the lowest means. This could be explained by the observation that loudness and speechiness both don't necessarily have a very strong correlation with valence as shown on the heat maps (whereas I based my assumptions on low valence, assuming a high correlation between those features and valence). The correlation of those two features with valence are very low especially for the English songs (<0.08).
 
 Turns out, I think I was right in that my music taste isn't super diversified beacuse when I calculated the average of the standard deviations of my songs' audio feature, it came out to be around 0.22 which I think is pretty low. It was this amount for both the English and Chinese playlists.
 
 ## Next Steps
-Next time, I would want to try to look at a bigger subset of my music becuase this time I only had 37 songs from each playlist (since I don't listen to as many Chinese songs). Moving forward, I will also try to apply machine learning in my analysis -- perhaps in predicting which playlists a song belongs in or make song recommendations based on playlist of songs.
+Next time, I would want to try to look at a bigger subset of my music becuase this time I only had 37 songs from each playlist (since I don't listen to as many Chinese songs). Moving forward, I will also try to take a machine learning approach to my analysis -- perhaps in predicting which playlists a song belongs to or making song recommendations based on playlist.
